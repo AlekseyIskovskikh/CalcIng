@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        init();
     }
 
     private void init(){
@@ -35,6 +36,85 @@ public class MainActivity extends AppCompatActivity {
                 txt.setText(text);
             }
         });
-
+        btn1.setOnClickListener(new View.OnClickListener() {
+            TextView txt = findViewById(R.id.number);
+            @Override
+            public void onClick(View v) {
+                String text = getString(R.string.txt_num1);
+                txt.setText(text);
+            }
+        });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            TextView txt = findViewById(R.id.number);
+            @Override
+            public void onClick(View v) {
+                String text = getString(R.string.txt_num2);
+                txt.setText(text);
+            }
+        });
+        btn3.setOnClickListener(new View.OnClickListener() {
+            TextView txt = findViewById(R.id.number);
+            @Override
+            public void onClick(View v) {
+                String text = getString(R.string.txt_num3);
+                txt.setText(text);
+            }
+        });
+        btn4.setOnClickListener(new View.OnClickListener() {
+            TextView txt = findViewById(R.id.number);
+            @Override
+            public void onClick(View v) {
+                String text = getString(R.string.txt_num4);
+                txt.setText(text);
+            }
+        });
+        btn5.setOnClickListener(new View.OnClickListener() {
+            TextView txt = findViewById(R.id.number);
+            @Override
+            public void onClick(View v) {
+                String text = getString(R.string.txt_num5);
+                txt.setText(text);
+            }
+        });
+        btn6.setOnClickListener(new View.OnClickListener() {
+            TextView txt = findViewById(R.id.number);
+            @Override
+            public void onClick(View v) {
+                String text = getString(R.string.txt_num6);
+                txt.setText(text);
+            }
+        });
+        btn7.setOnClickListener(new View.OnClickListener() {
+            TextView txt = findViewById(R.id.number);
+            @Override
+            public void onClick(View v) {
+                String text = getString(R.string.txt_num7);
+                txt.setText(text);
+            }
+        });
+        btn8.setOnClickListener(new View.OnClickListener() {
+            TextView txt = findViewById(R.id.number);
+            @Override
+            public void onClick(View v) {
+                String text = getString(R.string.txt_num8);
+                txt.setText(text);
+            }
+        });
+        btn9.setOnClickListener(new View.OnClickListener() {
+            TextView txt = findViewById(R.id.number);
+            @Override
+            public void onClick(View v) {
+                String text = getString(R.string.txt_num9);
+                txt.setText(text);
+            }
+        });
+        btntochka.setOnClickListener(new View.OnClickListener() {
+            TextView txt = findViewById(R.id.number);
+            @Override
+            public void onClick(View v) {
+                String text = getString(R.string.txt_numtochka);
+                txt.setText(text);
+            }
+        });
     }
 }
