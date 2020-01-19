@@ -11,4 +11,12 @@
     <string name="txt_num0">0</string>
     <string name="txt_numtochka">.</string>
     <string name="txt_num1">1</string>
+    <string name="txt_С">С</string>
+    <string name="txt_procent">%</string>
+    <string name="txt_div">/</string>
+    <string name="txt_rav">=</string>
+    <string name="txt_divpro">+/-</string>
+    <string name="txt_mult">X</string>
+    <string name="txt_minus">-</string>
+    <string name="txt_plus">+</string>
 </resources>
