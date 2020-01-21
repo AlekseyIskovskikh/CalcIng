@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init(){
+        Button btnC=findViewById(R.id.numC);
         Button btn0=findViewById(R.id.num0);
         Button btn1=findViewById(R.id.num1);
         Button btn2=findViewById(R.id.num2);
@@ -28,13 +29,28 @@ public class MainActivity extends AppCompatActivity {
         Button btn8=findViewById(R.id.num8);
         Button btn9=findViewById(R.id.num9);
         Button btntochka=findViewById(R.id.numtochka);
+        Button btnplus=findViewById(R.id.numplus);
+        Button btnminus= findViewById(R.id.numminus);
+        Button btnrav= findViewById(R.id.numrav);
+        Button btnmult= findViewById(R.id.nummult);
+        Button btndiv= findViewById(R.id.numdiv);
+        Button btnprocent= findViewById(R.id.numprocent);
+
+
+        btnC.setOnClickListener(new View.OnClickListener() {
+            TextView disp = findViewById(R.id.disp);
+            @Override
+            public void onClick(View v) {
+                disp.setText(" ");
+            }
+        });
 
         btn0.setOnClickListener(new View.OnClickListener() {
             TextView disp = findViewById(R.id.disp);
             @Override
             public void onClick(View v) {
                 String text = getString(R.string.txt_num0);
-                disp.setText(text);
+                disp.setText(disp.getText() + text);
             }
         });
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -42,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String text = getString(R.string.txt_num1);
-                disp.setText(text);
+                disp.setText(disp.getText() + text);
             }
         });
         btn2.setOnClickListener(new View.OnClickListener() {
@@ -50,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String text = getString(R.string.txt_num2);
-                disp.setText(text);
+                disp.setText(disp.getText() + text);
             }
         });
         btn3.setOnClickListener(new View.OnClickListener() {
@@ -58,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String text = getString(R.string.txt_num3);
-                disp.setText(text);
+                disp.setText(disp.getText() + text);
             }
         });
         btn4.setOnClickListener(new View.OnClickListener() {
@@ -66,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String text = getString(R.string.txt_num4);
-                disp.setText(text);
+                disp.setText(disp.getText() + text);
             }
         });
         btn5.setOnClickListener(new View.OnClickListener() {
@@ -74,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String text = getString(R.string.txt_num5);
-                disp.setText(text);
+                disp.setText(disp.getText() + text);
             }
         });
         btn6.setOnClickListener(new View.OnClickListener() {
@@ -82,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String text = getString(R.string.txt_num6);
-                disp.setText(text);
+                disp.setText(disp.getText() + text);
             }
         });
         btn7.setOnClickListener(new View.OnClickListener() {
@@ -90,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String text = getString(R.string.txt_num7);
-                disp.setText(text);
+                disp.setText(disp.getText() + text);
             }
         });
         btn8.setOnClickListener(new View.OnClickListener() {
@@ -98,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String text = getString(R.string.txt_num8);
-                disp.setText(text);
+                disp.setText(disp.getText() + text);
             }
         });
         btn9.setOnClickListener(new View.OnClickListener() {
@@ -106,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String text = getString(R.string.txt_num9);
-                disp.setText(text);
+                disp.setText(disp.getText() + text);
             }
         });
         btntochka.setOnClickListener(new View.OnClickListener() {
@@ -114,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String text = getString(R.string.txt_numtochka);
-                disp.setText(text);
+                disp.setText(disp.getText() + text);
             }
         });
     }
