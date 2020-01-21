@@ -15,7 +15,7 @@
     <string name="txt_procent">%</string>
     <string name="txt_div">/</string>
     <string name="txt_rav">=</string>
-    <string name="txt_divpro">+/-</string>
+    <string name="txt_del">Del</string>
     <string name="txt_mult">X</string>
     <string name="txt_minus">-</string>
     <string name="txt_plus">+</string>
