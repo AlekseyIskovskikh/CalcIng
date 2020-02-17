@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String text = getString(R.string.txt_num9);
                 disp.setText(disp.getText() + text);
-                dispout.setText(dispout.getText() + text);
+                dispout.setText(" ");
             }
         });
         btnDel.setOnClickListener(new View.OnClickListener() {
@@ -165,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
                     disp.setText(" ");
                 }else{
                     disp.setText(disp.getText()+"+");
-                    mValueOne = Float.parseFloat(dispout.getText() + "");
+                    mValueOne = Float.valueOf(dispout.getText().toString());
                     mPlus=true;
                     dispout.setText(null);
                 }
@@ -175,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                     disp.setText(disp.getText()+"-");
-                    mValueOne = Float.parseFloat(dispout.getText() + "");
+                    mValueOne = Float.valueOf(dispout.getText().toString());
                     mMinus=true;
                     dispout.setText(null);
             }
@@ -184,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 disp.setText(disp.getText()+"*");
-                mValueOne=Float.parseFloat(dispout.getText() + " ");
+                mValueOne=Float.valueOf(dispout.getText().toString());
                 mMultiplication=true;
                 dispout.setText(null);
             }
@@ -193,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 disp.setText(disp.getText()+"/");
-                mValueOne = Float.parseFloat(dispout.getText() + "");
+                mValueOne = Float.valueOf(dispout.getText().toString());
                 mDivision = true ;
                 dispout.setText(null);
             }
@@ -201,24 +201,24 @@ public class MainActivity extends AppCompatActivity {
         btnrav.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mValueTwo = Float.parseFloat(dispout.getText() + "");
+                mValueTwo = Float.valueOf(dispout.getText().toString());
                 if(mPlus == true){
-                    disp.setText(mValueOne + mValueTwo+"");
+                    disp.setText(String.valueOf(mValueOne + mValueTwo));
                     mPlus=false;
                 }
 
                 if (mMinus == true){
-                    disp.setText(mValueOne - mValueTwo+"");
+                    disp.setText(String.valueOf(mValueOne - mValueTwo));
                     mMinus=false;
                 }
 
                 if(mMultiplication == true){
-                    disp.setText(mValueOne * mValueTwo+"");
+                    disp.setText(String.valueOf(mValueOne * mValueTwo));
                     mMultiplication=false;
                 }
 
                 if(mDivision == true){
-                    disp.setText(mValueOne / mValueTwo+"");
+                    disp.setText(String.valueOf(mValueOne / mValueTwo));
                     mDivision=false;
                 }
             }
