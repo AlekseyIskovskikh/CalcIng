@@ -2,12 +2,9 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -48,9 +45,9 @@
                     android:text="I"
                     app:layout_constraintEnd_toStartOf="@+id/t6"
                     app:layout_constraintHorizontal_chainStyle="spread"
-                    app:layout_constraintVertical_chainStyle="spread"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="spread" />
 
                 <TextView
                     android:id="@+id/t2"
@@ -60,8 +57,8 @@
                     app:layout_constraintBaseline_toBaselineOf="@+id/t7"
                     app:layout_constraintEnd_toStartOf="@+id/t7"
                     app:layout_constraintHorizontal_chainStyle="spread"
-                    app:layout_constraintVertical_chainStyle="spread"
-                    app:layout_constraintStart_toEndOf="@+id/t5" />
+                    app:layout_constraintStart_toEndOf="@+id/t5"
+                    app:layout_constraintVertical_chainStyle="spread" />
 
                 <TextView
                     android:id="@+id/t3"
@@ -71,9 +68,9 @@
                     android:text="K"
                     app:layout_constraintEnd_toStartOf="@+id/t4"
                     app:layout_constraintHorizontal_chainStyle="spread"
-                    app:layout_constraintVertical_chainStyle="spread"
                     app:layout_constraintStart_toEndOf="@+id/t6"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="spread" />
 
                 <TextView
                     android:id="@+id/t4"
@@ -83,8 +80,8 @@
                     app:layout_constraintBaseline_toBaselineOf="@+id/t3"
                     app:layout_constraintEnd_toStartOf="@+id/t5"
                     app:layout_constraintHorizontal_chainStyle="spread"
-                    app:layout_constraintVertical_chainStyle="spread"
-                    app:layout_constraintStart_toEndOf="@+id/t3" />
+                    app:layout_constraintStart_toEndOf="@+id/t3"
+                    app:layout_constraintVertical_chainStyle="spread" />
 
                 <TextView
                     android:id="@+id/t5"
@@ -94,9 +91,9 @@
                     android:text="V"
                     app:layout_constraintEnd_toStartOf="@+id/t2"
                     app:layout_constraintHorizontal_chainStyle="spread"
-                    app:layout_constraintVertical_chainStyle="spread"
                     app:layout_constraintStart_toEndOf="@+id/t4"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="spread" />
 
                 <TextView
                     android:id="@+id/t6"
@@ -106,8 +103,8 @@
                     app:layout_constraintBaseline_toBaselineOf="@+id/t3"
                     app:layout_constraintEnd_toStartOf="@+id/t3"
                     app:layout_constraintHorizontal_chainStyle="spread"
-                    app:layout_constraintVertical_chainStyle="spread"
-                    app:layout_constraintStart_toEndOf="@+id/t1" />
+                    app:layout_constraintStart_toEndOf="@+id/t1"
+                    app:layout_constraintVertical_chainStyle="spread" />
 
                 <TextView
                     android:id="@+id/t7"
@@ -117,9 +114,9 @@
                     android:text="K"
                     app:layout_constraintEnd_toStartOf="@+id/t8"
                     app:layout_constraintHorizontal_chainStyle="spread"
-                    app:layout_constraintVertical_chainStyle="spread"
                     app:layout_constraintStart_toEndOf="@+id/t2"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="spread" />
 
                 <TextView
                     android:id="@+id/t8"
@@ -129,8 +126,8 @@
                     app:layout_constraintBaseline_toBaselineOf="@+id/t7"
                     app:layout_constraintEnd_toStartOf="@+id/t9"
                     app:layout_constraintHorizontal_chainStyle="spread"
-                    app:layout_constraintVertical_chainStyle="spread"
-                    app:layout_constraintStart_toEndOf="@+id/t7" />
+                    app:layout_constraintStart_toEndOf="@+id/t7"
+                    app:layout_constraintVertical_chainStyle="spread" />
 
                 <TextView
                     android:id="@+id/t9"
@@ -140,8 +137,8 @@
                     app:layout_constraintBaseline_toBaselineOf="@+id/t8"
                     app:layout_constraintEnd_toStartOf="@+id/t10"
                     app:layout_constraintHorizontal_chainStyle="spread"
-                    app:layout_constraintVertical_chainStyle="spread"
-                    app:layout_constraintStart_toEndOf="@+id/t8" />
+                    app:layout_constraintStart_toEndOf="@+id/t8"
+                    app:layout_constraintVertical_chainStyle="spread" />
 
                 <TextView
                     android:id="@+id/t10"
@@ -151,11 +148,96 @@
                     android:text="H"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_chainStyle="spread"
-                    app:layout_constraintVertical_chainStyle="spread"
                     app:layout_constraintStart_toEndOf="@+id/t9"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="spread" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/numPi"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/txt_pi" />
+
+
+                    <Button
+                        android:id="@+id/numX"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/txt_x" />
+
+                    <Button
+                        android:id="@+id/numSin"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/txt_sin" />
+
+                    <Button
+                        android:id="@+id/numCos"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/txt_cos" />
+
+                    <Button
+                        android:id="@+id/numTan"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/txt_tan" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        android:id="@+id/numRad"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/txt_Rad" />
+
+                    <Button
+                        android:id="@+id/numSinh"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/txt_sinh" />
+
+                    <Button
+                        android:id="@+id/numCosh"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/txt_cosh" />
+
+                    <Button
+                        android:id="@+id/numTanh"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/txt_tanh" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -306,10 +388,17 @@
                 android:orientation="horizontal">
 
                 <Button
+                    android:id="@+id/numIngineer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/txt_numIngineer" />
+
+                <Button
                     android:id="@+id/num0"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
+                    android:layout_weight="1"
                     android:text="@string/txt_num0" />
 
                 <Button
