@@ -19,4 +19,15 @@
     <string name="txt_mult">X</string>
     <string name="txt_minus">-</string>
     <string name="txt_plus">+</string>
+    <string name="txt_numIngineer"><![CDATA[=>]]></string>
+    <string name="txt_tan">tan</string>
+    <string name="txt_cos">cos</string>
+    <string name="txt_sin">sin</string>
+    <string name="txt_x">X*X</string>
+    <string name="txt_pi">Pi</string>
+    <string name="txt_E">e</string>
+    <string name="txt_Rad">Rad</string>
+    <string name="txt_sinh">sinh</string>
+    <string name="txt_cosh">cosh</string>
+    <string name="txt_tanh">tanh</string>
 </resources>

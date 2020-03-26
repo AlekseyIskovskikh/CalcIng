@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
     float mValueOne , mValueTwo;
@@ -19,6 +21,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init(){
+        final View standardLayout = findViewById(R.id.calcLayout);
+        final View engineerLayout = findViewById(R.id.engineerLayout);
+        ToggleButton modeToggle = findViewById(R.id.modeToggle);
+        modeToggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    standardLayout.setVisibility(View.GONE);
+                    engineerLayout.setVisibility(View.VISIBLE);
+                } else {
+                    standardLayout.setVisibility(View.VISIBLE);
+                    engineerLayout.setVisibility(View.GONE);
+                }
+            }
+        });
         Button btnC=findViewById(R.id.numC);
         Button btn0=findViewById(R.id.num0);
         Button btn1=findViewById(R.id.num1);
